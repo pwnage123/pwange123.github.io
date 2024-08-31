@@ -8,6 +8,10 @@ body {
     height: 100%;
 }
 
+:root {
+    color-scheme: light only;
+}
+
 html, body { background: #fdfaf6!important;}
 
 .container-body {
