@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+   <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body> 
+<div class="container-body">
+    <div class="container-header">
+        <div class="bannerimage"></div>    
+            <a href="index.html" class="hef">
+                <div class="titlecard"></div>
+            </a>
+        <p class="date">SATURDAY, JANUARY 11th, 2025</p>
+            <div class="navigation">
+                <a href="theday.html" class="button-nav">The Day</a>
+                <a href="accommodation.html" class="button-nav">Accommodation</a>
+                <a href="themenu.html" class="button-nav">Menu</a>
+                <a href="rsvp.html" class="button-nav">RSVP</a>
+            </div>
+    </div>
+        <main>
+            
+            <div class="textcontainer grid2">
+                <div class="textboxs">
+                <h1 class="acomh1">Bunk Style Accommodation</h1>
+                <P class="acomtext">If you're planning on an overnight stay, bunkstyle rooms are available.<br><br>
+                While we can't guarantee a room to yourself, we'll organise friends and families in rooms together.<br><br>
+                There are 8 rooms available with various numbers of beds available.
+            </P>
+            </div>
+            <div class="image-container">
+                <img id="bunkimage" src="floorplan.jpg" alt="Manor Floor plan" class="thumbnail">
+                <p>Click image to enlarge</p>
+            </div>
+            
+            <!-- The Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            </div>
+
+            <div class="textbox1">
+                <h1 class="acomh2">Local Accommodation</h1>
+                <p class="localacom">The Woodhouse Adventure Park is only 5 minutes from Stirling and 15 minutes from Hahndorf
+                    allowing you to book accommodation for the night if you'd prefer more privacy.
+                </p>
+
+                <div class="hahndorf"></div>
+            </div>
+
+
+        </main>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the modal
+                var modal = document.getElementById("imageModal");
+            
+                // Get the image and insert it inside the modal
+                var img = document.getElementById("bunkimage");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+            
+                img.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+            
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+            });
+            </script>
+
+       <footer>
+        <a href="#" class="buttonbtt">Back to Top</a>
+       </footer>
+    </div>
+</body>
+</html>
