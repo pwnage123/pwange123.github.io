@@ -377,6 +377,13 @@ h2 {
     padding: 1rem;
 }
 
+.foodtitle1 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #405a45;
+    text-align: center;
+}
+
 .foodtitle {
     font-size: 1.3rem;
     margin-bottom: 1rem;
