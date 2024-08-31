@@ -95,6 +95,7 @@ b {
     .bannerimage {
         margin: auto;
         height: 40px;
+        background-position: center;
     }
     .titlecard {
         max-height: 12vh;
