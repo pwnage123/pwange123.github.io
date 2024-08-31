@@ -8,6 +8,8 @@ body {
     height: 100%;
 }
 
+html, body { background: #fdfaf6!important;}
+
 .container-body {
     width: 1000px;
     margin: 0 auto;
