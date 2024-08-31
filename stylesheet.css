@@ -107,6 +107,8 @@ b {
     text-align: center;
     transition: background 299ms;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
  }
 
 .menu > div > a{
@@ -151,6 +153,9 @@ b {
     }
     .button-nav:hover{
         border-radius: 0;
+    }
+    .menu {
+        text-align: center;
     }
 }
 
