@@ -470,6 +470,11 @@ h2 {
         width: 100%;
         font-size: small;
     }
+    .foodtitle1 {
+        display:block;
+        align-items: center;
+        align-self: center;
+    }
 }
 
 .contact-right {
